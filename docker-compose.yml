@@ -3,7 +3,7 @@ version: '3.8'
 services:
   catalog-image:
     image: multi-shop-discount-api
-    container_name: catalog-api
+    container_name: discount-api
     ports:
       - "7020:8080"
       - "7021:8081"
