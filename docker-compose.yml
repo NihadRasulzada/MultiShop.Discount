@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  catalog-image:
+    image: multi-shop-discount-api
+    container_name: catalog-api
+    ports:
+      - "7020:8080"
+      - "7021:8081"
+    networks:
+      - ms-sql-network
+      - multishop-discount-network
+
+networks:
+  ms-sql-network:
+    external: true
+  multishop-discount-network:
+    external: true
